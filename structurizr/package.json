@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "puppeteer": "^17.0.0"
+  },
+  "scripts": {
+    "export": "node ./export.js $STRUCTURIZR_URL svg"
+  }
+}
