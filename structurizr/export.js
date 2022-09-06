@@ -83,7 +83,7 @@ const filenameSuffix = 'structurizr-';
       const diagramKeyFilename = filenameSuffix + diagramKey + '-key.svg'
 
       var svgForDiagram = await page.evaluate(() => {
-        return structurizr.scripting.exportCurrentDiagramToSVG();
+        return structurizr.scripting.exportCurrentDiagramToSVG({ interactive: true });
       });
 
       console.log("Writing " + diagramFilename);
@@ -93,7 +93,7 @@ const filenameSuffix = 'structurizr-';
       actualNumberOfExports++;
 
       var svgForKey = await page.evaluate(() => {
-        return structurizr.scripting.exportCurrentDiagramKeyToSVG();
+        return structurizr.scripting.exportCurrentDiagramKeyToSVG({ interactive: true });
       });
 
       console.log("Writing " + diagramKeyFilename);

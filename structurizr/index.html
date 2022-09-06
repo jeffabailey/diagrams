@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="application/javascript">
+            function structurizrElementDoubleClicked(evt, viewKey, url) {
+                if (viewKey !== undefined) {
+                    if (evt.altKey === true && url !== undefined) {
+                        window.open(url);
+                    } else {
+                        window.location.hash = encodeURIComponent(viewKey);
+                    }
+                } else if (url !== undefined) {
+                    window.open(url);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <object type="image/svg+xml" data="./structurizr-congress.svg"/>
+    </body>
+</html>
