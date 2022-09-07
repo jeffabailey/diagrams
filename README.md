@@ -1,3 +1,3 @@
 # Diagrams
 
-General use utilities for diagrams.
+General use utilities for structurizr diagrams.
