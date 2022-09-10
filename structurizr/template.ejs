@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title><%= diagramKey %></title>
         <script type="application/javascript">
             function structurizrElementDoubleClicked(evt, viewKey, url) {
                 if (viewKey !== undefined) {
@@ -16,6 +17,12 @@
         </script>
     </head>
     <body>
-        <object type="image/svg+xml" data="./structurizr-congress.svg"/>
+        <h1><%= diagramKey %></h1>
+        <section>
+            <%- diagramKeySvgMarkup %>
+        </section>
+        <section>
+            <%- diagramSvgMarkup %>
+        </section>
     </body>
 </html>

@@ -1,8 +1,14 @@
 {
   "dependencies": {
-    "puppeteer": "^17.0.0"
+    "@babel/preset-env": "^7.19.0",
+    "babel-jest": "^29.0.2",
+    "ejs": "^3.1.8",
+    "jest": "^29.0.2",
+    "puppeteer": "^17.0.0",
+    "ts-jest": "^29.0.0"
   },
   "scripts": {
-    "export": "node ./export.js $STRUCTURIZR_URL svg"
+    "export": "node ./export.js $STRUCTURIZR_URL svg",
+    "test": "jest"
   }
 }
